@@ -1,17 +1,17 @@
 //
-//  SubcategoryLoader.swift
+//  SubcategoriesLoaer.swift
 //  WearShop
 //
-//  Created by Роман далинкевич on 07.08.2020.
+//  Created by Роман далинкевич on 19.08.2020.
 //  Copyright © 2020 Роман далинкевич. All rights reserved.
 //
-//
-//import Foundation
+
+
 
 import Foundation
 
 protocol SubcategoriesLoaderDelegate {
-    func loaded(subcategories: [Subcategories])
+    func loaded(categories: [Subcategories])
     
 }
 
@@ -43,7 +43,7 @@ class SubcategoriesLoader {
                 
                 
                 DispatchQueue.main.async {
-                    self.delegate?.loaded(subcategories: subcategories)
+                    self.delegate?.loaded(categories: subcategories)
                 }
                 
             }

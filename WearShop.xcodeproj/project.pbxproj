@@ -9,17 +9,23 @@
 /* Begin PBXBuildFile section */
 		AF3F5C4F24BF192E00B1E4A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3F5C4E24BF192E00B1E4A4 /* AppDelegate.swift */; };
 		AF3F5C5124BF192E00B1E4A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3F5C5024BF192E00B1E4A4 /* SceneDelegate.swift */; };
-		AF3F5C5324BF192E00B1E4A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3F5C5224BF192E00B1E4A4 /* ViewController.swift */; };
 		AF3F5C5624BF192E00B1E4A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3F5C5424BF192E00B1E4A4 /* Main.storyboard */; };
 		AF3F5C5824BF193000B1E4A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF3F5C5724BF193000B1E4A4 /* Assets.xcassets */; };
 		AF3F5C5B24BF193000B1E4A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3F5C5924BF193000B1E4A4 /* LaunchScreen.storyboard */; };
 		AF3F5C6624BF2BEE00B1E4A4 /* OneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3F5C6524BF2BEE00B1E4A4 /* OneTableViewCell.swift */; };
-		AF4E114424DD6784004C3BB4 /* SubCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E114324DD6784004C3BB4 /* SubCategoryViewController.swift */; };
-		AF4E114924DD80DC004C3BB4 /* SubcategoryLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E114824DD80DC004C3BB4 /* SubcategoryLoader.swift */; };
-		AF4E114B24E3C9EF004C3BB4 /* TwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E114A24E3C9EF004C3BB4 /* TwoTableViewCell.swift */; };
+		AF4B6D92251F834F007727B6 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4B6D91251F834F007727B6 /* CartViewController.swift */; };
+		AF4E119D24FE1027004C3BB4 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E119C24FE1027004C3BB4 /* ProductListViewController.swift */; };
+		AF4E119F24FE1075004C3BB4 /* ProductListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E119E24FE1075004C3BB4 /* ProductListCollectionViewCell.swift */; };
+		AF751B572524662D001A549B /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF751B562524662D001A549B /* CartTableViewCell.swift */; };
+		AF751B62252AF422001A549B /* ProductCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF751B61252AF422001A549B /* ProductCart.swift */; };
+		AF751B74252B49D7001A549B /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF751B73252B49D7001A549B /* RealmManager.swift */; };
+		AF751B84254005A3001A549B /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF751B83254005A3001A549B /* ImageService.swift */; };
 		AF97FB2024D7ECDD00310051 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97FB1F24D7ECDD00310051 /* Category.swift */; };
 		AF97FB2324D7F40900310051 /* CategoriesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97FB2224D7F40900310051 /* CategoriesLoader.swift */; };
 		AF97FB2724D952DF00310051 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97FB2624D952DF00310051 /* CategoryViewController.swift */; };
+		AF9CA733251B1A7500232FEB /* ProductCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CA732251B1A7500232FEB /* ProductCardViewController.swift */; };
+		AFA1878F250D19770019BDE9 /* ItemsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA1878E250D19770019BDE9 /* ItemsLoader.swift */; };
+		AFA18791250D19F90019BDE9 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA18790250D19F90019BDE9 /* Items.swift */; };
 		F755A36601E0E67FEEB66F97 /* Pods_WearShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1444C30586FC2A92E215665E /* Pods_WearShop.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,18 +36,24 @@
 		AF3F5C4B24BF192E00B1E4A4 /* WearShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WearShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3F5C4E24BF192E00B1E4A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF3F5C5024BF192E00B1E4A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF3F5C5224BF192E00B1E4A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF3F5C5524BF192E00B1E4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF3F5C5724BF193000B1E4A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF3F5C5A24BF193000B1E4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF3F5C5C24BF193000B1E4A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF3F5C6524BF2BEE00B1E4A4 /* OneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTableViewCell.swift; sourceTree = "<group>"; };
-		AF4E114324DD6784004C3BB4 /* SubCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryViewController.swift; sourceTree = "<group>"; };
-		AF4E114824DD80DC004C3BB4 /* SubcategoryLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcategoryLoader.swift; sourceTree = "<group>"; };
-		AF4E114A24E3C9EF004C3BB4 /* TwoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoTableViewCell.swift; sourceTree = "<group>"; };
+		AF4B6D91251F834F007727B6 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		AF4E119C24FE1027004C3BB4 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		AF4E119E24FE1075004C3BB4 /* ProductListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF751B562524662D001A549B /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		AF751B61252AF422001A549B /* ProductCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCart.swift; sourceTree = "<group>"; };
+		AF751B73252B49D7001A549B /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		AF751B83254005A3001A549B /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		AF97FB1F24D7ECDD00310051 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		AF97FB2224D7F40900310051 /* CategoriesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesLoader.swift; sourceTree = "<group>"; };
 		AF97FB2624D952DF00310051 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		AF9CA732251B1A7500232FEB /* ProductCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardViewController.swift; sourceTree = "<group>"; };
+		AFA1878E250D19770019BDE9 /* ItemsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsLoader.swift; sourceTree = "<group>"; };
+		AFA18790250D19F90019BDE9 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,12 +100,25 @@
 				AF4C0AC724DAB8980005ABED /* Delegates */,
 				AF4C0AC824DABF520005ABED /* Storyboards */,
 				AF4C0AC924DABFA20005ABED /* Category */,
-				AF4E114524DD6791004C3BB4 /* SubCategory */,
-				AF3F5C5224BF192E00B1E4A4 /* ViewController.swift */,
-				AF3F5C5724BF193000B1E4A4 /* Assets.xcassets */,
+				AF4E114524DD6791004C3BB4 /* ProductList */,
+				AF9CA731251B19E900232FEB /* ProductCard */,
+				AF4B6D90251F830B007727B6 /* Cart */,
+				AF751B8B2540182A001A549B /* Service */,
 				AF3F5C5C24BF193000B1E4A4 /* Info.plist */,
+				AF3F5C5724BF193000B1E4A4 /* Assets.xcassets */,
 			);
 			path = WearShop;
+			sourceTree = "<group>";
+		};
+		AF4B6D90251F830B007727B6 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				AF751B61252AF422001A549B /* ProductCart.swift */,
+				AF4B6D91251F834F007727B6 /* CartViewController.swift */,
+				AF751B562524662D001A549B /* CartTableViewCell.swift */,
+				AF751B73252B49D7001A549B /* RealmManager.swift */,
+			);
+			path = Cart;
 			sourceTree = "<group>";
 		};
 		AF4C0AC724DAB8980005ABED /* Delegates */ = {
@@ -125,14 +150,31 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		AF4E114524DD6791004C3BB4 /* SubCategory */ = {
+		AF4E114524DD6791004C3BB4 /* ProductList */ = {
 			isa = PBXGroup;
 			children = (
-				AF4E114324DD6784004C3BB4 /* SubCategoryViewController.swift */,
-				AF4E114824DD80DC004C3BB4 /* SubcategoryLoader.swift */,
-				AF4E114A24E3C9EF004C3BB4 /* TwoTableViewCell.swift */,
+				AF4E119C24FE1027004C3BB4 /* ProductListViewController.swift */,
+				AF4E119E24FE1075004C3BB4 /* ProductListCollectionViewCell.swift */,
+				AFA1878E250D19770019BDE9 /* ItemsLoader.swift */,
+				AFA18790250D19F90019BDE9 /* Items.swift */,
 			);
-			path = SubCategory;
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		AF751B8B2540182A001A549B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AF751B83254005A3001A549B /* ImageService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AF9CA731251B19E900232FEB /* ProductCard */ = {
+			isa = PBXGroup;
+			children = (
+				AF9CA732251B1A7500232FEB /* ProductCardViewController.swift */,
+			);
+			path = ProductCard;
 			sourceTree = "<group>";
 		};
 		CD68BE4A364BD001C7A237CE /* Pods */ = {
@@ -259,15 +301,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF3F5C5324BF192E00B1E4A4 /* ViewController.swift in Sources */,
-				AF4E114424DD6784004C3BB4 /* SubCategoryViewController.swift in Sources */,
 				AF3F5C4F24BF192E00B1E4A4 /* AppDelegate.swift in Sources */,
+				AF751B84254005A3001A549B /* ImageService.swift in Sources */,
 				AF97FB2724D952DF00310051 /* CategoryViewController.swift in Sources */,
+				AF751B74252B49D7001A549B /* RealmManager.swift in Sources */,
+				AF9CA733251B1A7500232FEB /* ProductCardViewController.swift in Sources */,
+				AFA1878F250D19770019BDE9 /* ItemsLoader.swift in Sources */,
+				AF4E119F24FE1075004C3BB4 /* ProductListCollectionViewCell.swift in Sources */,
+				AF4E119D24FE1027004C3BB4 /* ProductListViewController.swift in Sources */,
+				AF4B6D92251F834F007727B6 /* CartViewController.swift in Sources */,
 				AF3F5C6624BF2BEE00B1E4A4 /* OneTableViewCell.swift in Sources */,
-				AF4E114B24E3C9EF004C3BB4 /* TwoTableViewCell.swift in Sources */,
+				AFA18791250D19F90019BDE9 /* Items.swift in Sources */,
+				AF751B62252AF422001A549B /* ProductCart.swift in Sources */,
+				AF751B572524662D001A549B /* CartTableViewCell.swift in Sources */,
 				AF97FB2024D7ECDD00310051 /* Category.swift in Sources */,
 				AF3F5C5124BF192E00B1E4A4 /* SceneDelegate.swift in Sources */,
-				AF4E114924DD80DC004C3BB4 /* SubcategoryLoader.swift in Sources */,
 				AF97FB2324D7F40900310051 /* CategoriesLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

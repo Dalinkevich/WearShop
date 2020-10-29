@@ -13,7 +13,7 @@ import Foundation
 
 class Category {
     let name: String
-    let sortOrder: String
+    let sortOrder: Int
     let image: String
     let iconImage: String
     let iconImageActive: String
@@ -31,7 +31,7 @@ class Category {
         }
         
         self.name = name
-        self.sortOrder = sortOrder
+        self.sortOrder = Int(sortOrder) ?? 0
         self.image = image
         self.iconImage = iconImage
         self.iconImageActive = iconImageActive
@@ -53,25 +53,24 @@ class Category {
 }
 
 class Subcategories {
-    let id: String
+    let id: Int
     let iconImage: String
-    let sortOrder: String
+    let sortOrder: Int
     let name: String
-    let type: String
     
-    init? (data: NSDictionary) {
+    
+    init?(data: NSDictionary) {
         guard let id = data["id"] as? String,
               let iconImage = data["iconImage"] as? String,
               let sortOrder = data["sortOrder"] as? String,
-              let name = data["name"] as? String,
-              let type = data["type"] as? String else {
+              let name = data["name"] as? String else {
+            
                 return nil
         }
-        self.id = id
+        self.id = Int(id) ?? 0
         self.iconImage = iconImage
-        self.sortOrder = sortOrder
+        self.sortOrder = Int(sortOrder) ?? 0
         self.name = name
-        self.type = type
     }
     
 }

@@ -1,49 +1,45 @@
 //
-//  Response.swift
+//  ItemsLoader.swift
 //  WearShop
 //
-//  Created by Роман далинкевич on 03.08.2020.
+//  Created by Роман далинкевич on 12.09.2020.
 //  Copyright © 2020 Роман далинкевич. All rights reserved.
 //
 
 import Foundation
 
-
-
-protocol CategoriesLoaderDelegate {
-    func loaded(categories: [Category])
-    
+protocol ItemsLoaderDelegate {
+    func loaded(items: [Items])
 }
 
-class CategoriesLoader {
+class ItemsLoader {
     
-    var delegate: CategoriesLoaderDelegate?
+    var delegate: ItemsLoaderDelegate?
+
     
-    func loadCategories() {
-        let url = URL(string: "http://blackstarshop.ru/index.php?route=api/v1/categories")!
-        
+    func loadItems(idCat: Int) {
+        let url = URL(string: "http://blackstarshop.ru/index.php?route=api/v1/products&cat_id=\(idCat)")!
+    
         let request = URLRequest(url: url)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             if let data = data,
                 let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments),
                 let jsonDict = json as? NSDictionary {
 
-                var categories: [Category] = []
-                
+                var items: [Items] = []
                 for (_, data) in jsonDict where data is NSDictionary {
-                    if let category = Category(data: data as! NSDictionary) {
-                        categories.append(category)   
+                    if let itm = Items(data: data as! NSDictionary) {
+                        items.append(itm)
                     }
                 }
                 DispatchQueue.main.async {
-                    self.delegate?.loaded(categories: categories)
+                    self.delegate?.loaded(items: items)
                 }
             }
         }
-        
+    
         task.resume()
-        
+    
     }
     
 }
-
