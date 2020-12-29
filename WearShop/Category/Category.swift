@@ -10,7 +10,6 @@
 
 import Foundation
 
-
 class Category {
     let name: String
     let sortOrder: Int

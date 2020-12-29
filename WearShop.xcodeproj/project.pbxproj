@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF17A083254C06870034956A /* ImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF17A082254C06870034956A /* ImagesCollectionViewCell.swift */; };
 		AF3F5C4F24BF192E00B1E4A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3F5C4E24BF192E00B1E4A4 /* AppDelegate.swift */; };
 		AF3F5C5124BF192E00B1E4A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3F5C5024BF192E00B1E4A4 /* SceneDelegate.swift */; };
 		AF3F5C5624BF192E00B1E4A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3F5C5424BF192E00B1E4A4 /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 		AF9CA733251B1A7500232FEB /* ProductCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CA732251B1A7500232FEB /* ProductCardViewController.swift */; };
 		AFA1878F250D19770019BDE9 /* ItemsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA1878E250D19770019BDE9 /* ItemsLoader.swift */; };
 		AFA18791250D19F90019BDE9 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA18790250D19F90019BDE9 /* Items.swift */; };
+		AFE3C51F255AA9CF00B0E672 /* SizeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3C51E255AA9CF00B0E672 /* SizeTableViewController.swift */; };
+		AFE3C522255AA9FB00B0E672 /* SizeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3C521255AA9FB00B0E672 /* SizeTableViewCell.swift */; };
 		F755A36601E0E67FEEB66F97 /* Pods_WearShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1444C30586FC2A92E215665E /* Pods_WearShop.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,7 @@
 		0F9FC7B09F45FA9A98630D29 /* Pods-WearShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WearShop.release.xcconfig"; path = "Target Support Files/Pods-WearShop/Pods-WearShop.release.xcconfig"; sourceTree = "<group>"; };
 		1444C30586FC2A92E215665E /* Pods_WearShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WearShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A222DA56637C53D65792E225 /* Pods-WearShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WearShop.debug.xcconfig"; path = "Target Support Files/Pods-WearShop/Pods-WearShop.debug.xcconfig"; sourceTree = "<group>"; };
+		AF17A082254C06870034956A /* ImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF3F5C4B24BF192E00B1E4A4 /* WearShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WearShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3F5C4E24BF192E00B1E4A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF3F5C5024BF192E00B1E4A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 		AF9CA732251B1A7500232FEB /* ProductCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardViewController.swift; sourceTree = "<group>"; };
 		AFA1878E250D19770019BDE9 /* ItemsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsLoader.swift; sourceTree = "<group>"; };
 		AFA18790250D19F90019BDE9 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		AFE3C51E255AA9CF00B0E672 /* SizeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeTableViewController.swift; sourceTree = "<group>"; };
+		AFE3C521255AA9FB00B0E672 /* SizeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 				AF4E114524DD6791004C3BB4 /* ProductList */,
 				AF9CA731251B19E900232FEB /* ProductCard */,
 				AF4B6D90251F830B007727B6 /* Cart */,
+				AFE3C51D255AA98A00B0E672 /* size */,
 				AF751B8B2540182A001A549B /* Service */,
 				AF3F5C5C24BF193000B1E4A4 /* Info.plist */,
 				AF3F5C5724BF193000B1E4A4 /* Assets.xcassets */,
@@ -173,8 +180,18 @@
 			isa = PBXGroup;
 			children = (
 				AF9CA732251B1A7500232FEB /* ProductCardViewController.swift */,
+				AF17A082254C06870034956A /* ImagesCollectionViewCell.swift */,
 			);
 			path = ProductCard;
+			sourceTree = "<group>";
+		};
+		AFE3C51D255AA98A00B0E672 /* size */ = {
+			isa = PBXGroup;
+			children = (
+				AFE3C51E255AA9CF00B0E672 /* SizeTableViewController.swift */,
+				AFE3C521255AA9FB00B0E672 /* SizeTableViewCell.swift */,
+			);
+			path = size;
 			sourceTree = "<group>";
 		};
 		CD68BE4A364BD001C7A237CE /* Pods */ = {
@@ -303,6 +320,7 @@
 			files = (
 				AF3F5C4F24BF192E00B1E4A4 /* AppDelegate.swift in Sources */,
 				AF751B84254005A3001A549B /* ImageService.swift in Sources */,
+				AF17A083254C06870034956A /* ImagesCollectionViewCell.swift in Sources */,
 				AF97FB2724D952DF00310051 /* CategoryViewController.swift in Sources */,
 				AF751B74252B49D7001A549B /* RealmManager.swift in Sources */,
 				AF9CA733251B1A7500232FEB /* ProductCardViewController.swift in Sources */,
@@ -312,6 +330,8 @@
 				AF4B6D92251F834F007727B6 /* CartViewController.swift in Sources */,
 				AF3F5C6624BF2BEE00B1E4A4 /* OneTableViewCell.swift in Sources */,
 				AFA18791250D19F90019BDE9 /* Items.swift in Sources */,
+				AFE3C51F255AA9CF00B0E672 /* SizeTableViewController.swift in Sources */,
+				AFE3C522255AA9FB00B0E672 /* SizeTableViewCell.swift in Sources */,
 				AF751B62252AF422001A549B /* ProductCart.swift in Sources */,
 				AF751B572524662D001A549B /* CartTableViewCell.swift in Sources */,
 				AF97FB2024D7ECDD00310051 /* Category.swift in Sources */,

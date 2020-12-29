@@ -22,7 +22,6 @@ class ProductListViewController: UIViewController {
         loader.delegate = self
         loader.loadItems(idCat: id)
 
-       
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -31,8 +30,10 @@ class ProductListViewController: UIViewController {
             let item = sender as? Items {
             
             dvc.item = item
+        
         }
     }
+    
 }
   
 
@@ -41,6 +42,7 @@ extension ProductListViewController: ItemsLoaderDelegate {
         self.items = items
         productCollectionView.reloadData()
     }
+    
 }
 
 
@@ -50,8 +52,7 @@ extension ProductListViewController: UICollectionViewDelegateFlowLayout, UIColle
         let w = UIScreen.main.bounds.size.width / 2 - 20
         return CGSize(width: w, height: w)
     }
-    
-    
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
 

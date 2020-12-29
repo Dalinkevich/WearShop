@@ -13,7 +13,7 @@ class ProductCart: Object {
     @objc dynamic var name = ""
     @objc dynamic var price = ""
     @objc dynamic var imageUrl = ""
+    @objc dynamic var size = ""
+    @objc dynamic var count = 1
 
-    
-    
 }

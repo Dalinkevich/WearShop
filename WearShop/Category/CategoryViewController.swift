@@ -27,7 +27,6 @@ class CategoryViewController: UIViewController {
         loader.loadCategories()
         categoryTableView.reloadData()
 
-      
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -49,9 +48,8 @@ class CategoryViewController: UIViewController {
             dvc.id = id
         }
     }
+    
 }
-
-
 
 extension CategoryViewController: CategoriesLoaderDelegate {
     func loaded(categories: [Category]) {
@@ -59,8 +57,8 @@ extension CategoryViewController: CategoriesLoaderDelegate {
         categoryTableView.reloadData()
         
     }
+    
 }
-
 
 extension CategoryViewController:  UITableViewDataSource, UITableViewDelegate {
     
@@ -80,8 +78,7 @@ extension CategoryViewController:  UITableViewDataSource, UITableViewDelegate {
         
         if subcategories.count > 0 {
             cell.initCellSubcategories(item: subcategories[indexPath.row])
-            
-            
+
         } else {
             cell.initCellCategories(item: categories[indexPath.row])
         }
@@ -90,13 +87,11 @@ extension CategoryViewController:  UITableViewDataSource, UITableViewDelegate {
    
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if subcategories.count > 0 {
             performSegue(withIdentifier: "ProductListSegue", sender: subcategories[indexPath.row].id)
-            
-            
+
         } else {
             subcategories = categories[indexPath.row].getSubCategory()
         tableView.reloadData()

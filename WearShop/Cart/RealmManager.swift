@@ -22,6 +22,37 @@ class RealmManager {
         }
     }
     
+    func saveNew(item: ProductCart) {
+        
+        if serchData(serch: item)   {
+            
+            let items = getItems()
+            for el in items {
+                if el.name == item.name, el.size == item.size {
+                try! realm.write {
+                    el.count += 1
+                    
+                }
+              }
+            }
+           
+        } else {
+            try! realm.write {
+                realm.add(item)
+            }
+        }
+        
+    }
+    
+    func serchData(serch: ProductCart) -> Bool {
+        for item in getItems() {
+            if item.name == serch.name, item.size == serch.size {
+                return true
+            }
+        }
+        return false
+    }
+    
     func getItems() -> Results<ProductCart> {
         realm.objects(ProductCart.self)
     }
@@ -32,6 +63,6 @@ class RealmManager {
             realm.delete(item)
         }
     }
-    
+ 
 }
 

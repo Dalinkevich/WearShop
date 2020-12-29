@@ -8,8 +8,6 @@
 
 import Foundation
 
-
-
 class Items {
     
     let article: String
@@ -21,13 +19,10 @@ class Items {
     let mainImage: String
     let name: String
     let offers: NSArray
- 
     let price: String
     let productImages: NSArray
     let recommendedProductIDs: NSArray
     let sortOrder: Int
-  
-    
     
     init?(data: NSDictionary) {
         guard let article = data["article"] as? String,
@@ -39,13 +34,11 @@ class Items {
               let mainImage = data["mainImage"] as? String,
               let name = data["name"] as? String,
               let offers = data["offers"] as? NSArray,
-          
               let price = data["price"] as? String,
               let productImages = data["productImages"] as? NSArray,
               let recommendedProductIDs = data["recommendedProductIDs"] as? NSArray,
               let sortOrder = data["sortOrder"] as? String else {
               
-                
                 return nil
         }
         self.article = article
@@ -57,16 +50,12 @@ class Items {
         self.mainImage = mainImage
         self.name = name
         self.offers = offers
-      
         self.price = price
         self.productImages = productImages
         self.recommendedProductIDs = recommendedProductIDs
         self.sortOrder = Int(sortOrder) ?? 0
         
-        
     }
-    
-    
     
     func getOffers() -> [Offers] {
         var off = [Offers]()
@@ -94,18 +83,21 @@ class Items {
 }
 
 class Offers {
-    let productOfferID: Int
-    let quantity: Int
+    let productOfferID: String
+    let quantity: String
+    let size: String
 
 
     init?(data: NSDictionary) {
         guard let productOfferID = data["productOfferID"] as? String,
-              let quantity = data["quantity"] as? String else {
+              let quantity = data["quantity"] as? String,
+              let size = data["size"] as? String else {
 
                 return nil
         }
-        self.productOfferID = Int(productOfferID) ?? 0
-        self.quantity = Int(quantity) ?? 0
+        self.productOfferID = productOfferID
+        self.quantity = quantity
+        self.size = size
 
     }
 
@@ -113,7 +105,7 @@ class Offers {
 
 class ProductImages {
     let imageURL: String
-    let sortOrder: Int
+    let sortOrder: String
 
     init?(data: NSDictionary) {
         guard let imageURL = data["imageURL"] as? String,
@@ -122,7 +114,8 @@ class ProductImages {
                 return nil
         }
         self.imageURL = imageURL
-        self.sortOrder = Int(sortOrder) ?? 0
+        self.sortOrder = sortOrder
+        
     }
     
 }

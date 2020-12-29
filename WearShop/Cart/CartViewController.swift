@@ -12,26 +12,24 @@ class CartViewController: UIViewController {
 
     @IBOutlet var cartTableView: UITableView!
     
-    var product: Items!
- 
+    @IBOutlet var cartSum: UILabel!
+    
     var cart = RealmManager.shared.getItems()
     
-    @IBOutlet var cartSum: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        cart = RealmManager.shared.getItems()
         cartTableView.reloadData()
-        
+    
     }
        
 }
-
-
 
 extension CartViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,7 +39,7 @@ extension CartViewController: UITableViewDataSource {
             sum()
         }
         return cart.count
-        
+
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -49,9 +47,13 @@ extension CartViewController: UITableViewDataSource {
         cell.selectionStyle = .none
         
         let item = cart[indexPath.row]
-        cell.nameLabel.text = item.name
-        cell.priceLabel.text = item.price
-        cell.initProducrt(item: item)
+
+            cell.countLabel.text = "\(item.count)"
+            cell.sizeLabel.text = item.size
+            cell.nameLabel.text = item.name
+            cell.priceLabel.text = item.price
+            cell.initProducrt(item: item)
+        
 
         sum()
         
@@ -70,22 +72,28 @@ extension CartViewController: UITableViewDataSource {
            RealmManager.shared.remove(index: indexPath.row)
             
            cartTableView.deleteRows(at: [IndexPath.init(row: indexPath.row, section: 0)], with: .automatic)
-        
+
            cartTableView.reloadData()
         }
+        
     }
     
-    
     func sum() {
-        
+
         var sum: Int = 0
 
         for el in cart {
             let a = Double(el.price)
             let b = Int(a!)
-            sum += b
+            
+            if el.count > 1 {
+                sum += (b * el.count)
+            } else {
+                sum += b
+            }
             cartSum.text = "Total: \(sum)₽"
         }
     }
+ 
 }
 

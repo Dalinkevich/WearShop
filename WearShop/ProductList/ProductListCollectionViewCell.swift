@@ -31,6 +31,5 @@ class ProductListCollectionViewCell: UICollectionViewCell {
             self.productImageView.image = image
         }
     }
+
 }
-
-

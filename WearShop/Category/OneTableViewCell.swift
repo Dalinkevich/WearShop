@@ -29,6 +29,7 @@ class OneTableViewCell: UITableViewCell {
             self.categoryImage.image = image
             
         }
+        
     }
     
     func initCellSubcategories(item: Subcategories) {

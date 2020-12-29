@@ -16,12 +16,18 @@ class CartTableViewCell: UITableViewCell {
     
     @IBOutlet var productImageView: UIImageView!
     
-
+    @IBOutlet var sizeLabel: UILabel!
+    
+    @IBOutlet var countLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        nameLabel.lineBreakMode = .byWordWrapping
-        nameLabel.numberOfLines = 0
+        
         priceLabel.lineBreakMode = .byCharWrapping
+        nameLabel.lineBreakMode  = .byWordWrapping
+        sizeLabel.lineBreakMode  = .byWordWrapping
+        nameLabel.numberOfLines  = 0
+        sizeLabel.numberOfLines  = 0
 
     }
     
@@ -35,7 +41,6 @@ class CartTableViewCell: UITableViewCell {
         }
     }
     
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
